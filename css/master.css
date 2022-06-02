@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  height: 100vh;
+  width: 100vw;
+  color: azure;
+  font-family: 'Poppins', sans-serif;
+  background-image: url('../images/newyear.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+h1 {
+  font-size: 2.5rem;
+  animation-duration: 5s;
+  font-weight: bolder;
+}
+.countdown-container {
+  display: flex;
+  border-radius: 4px;
+  justify-content: space-around;
+  width: 90%;
+  background-color: hsla(0, 0%, 0%, 0.6);
+}
+.big-text {
+  font-size: 3rem;
+  line-height: 1;
+  margin: 0 0.5rem;
+  font-weight: bold;
+}
+.countdown-el {
+  text-align: center;
+}
+.countdown-el span {
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+.year {
+  font-size: 6rem;
+  font-weight: bolder;
+  z-index: -1;
+  color: #062844;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+/* making it responsive */
+@media screen and (min-width: 480px) {
+  .countdown-container {
+    width: auto;
+  }
+  h1 {
+    font-size: 4rem;
+  }
+  .big-text {
+    font-size: 6rem;
+    margin: 0 2rem;
+  }
+  .countdown-el span {
+    font-size: 1.5rem;
+  }
+}

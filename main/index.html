@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/master.css" />
+
+    <!-- custom animation -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <title>Count down timer</title>
+  </head>
+  <body>
+    <div id="year" class="year"></div>
+    <h1 class="animate__animated animate__fadeInDown">
+      New Year Eve
+    </h1>
+    <div class="countdown-container">
+      <div class="countdown-el days-c">
+        <p class="big-text" id="days">0</p>
+        <span>Days</span>
+      </div>
+      <div class="countdown-el hours-c">
+        <p class="big-text" id="hours">0</p>
+        <span>Hours</span>
+      </div>
+
+      <div class="countdown-el mins-c">
+        <p class="big-text" id="mins">0</p>
+        <span>Minutes</span>
+      </div>
+      <div class="countdown-el secs-c">
+        <p class="big-text" id="secs">0</p>
+        <span>Seconds</span>
+      </div>
+    </div>
+
+    <script src="../scripts/app.js"></script>
+  </body>
+</html>
